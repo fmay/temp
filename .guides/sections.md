@@ -6,9 +6,15 @@ files:
   - action: open
     path: 1-var-bird/main.js
     panel: 0
+    index: 0
+    type: file
+    arg: 1-var-bird/main.js
   - action: open
     path: "#preview: 1-var-bird/index.html"
     panel: 0
+    index: 1
+    type: preview
+    arg: 1-var-bird/index.html
 layout: 2-panels-tree
 step: 1-var-bird
 
@@ -37,10 +43,12 @@ files: []
 ---
 Click the code tab `main.js` on the left. If you can't see it, click on `main.js` in the *file tree* on the far left side.
 
-You will see that there are two lines of code that control each of the birds.
+You will see that there are two lines of code that control the big and small birds.
 
 ##Challenge
 Can you see how to sit both birds on the branch by adjusting the coordinates?
+
+![](.guides/img/var-bird-positioned.png)
 
 We'll describe what's going on in the next section.
 
@@ -61,18 +69,20 @@ So let's look at the code and discuss it.
   positionBigBird(xBird, yBird);
 ```
 
+##Functions
 `positionSmallBird` and `positionBigBird` are called *functions*. A function is simply another piece of code that we can *call* from within our code.
 
 A function can take parameters. In our example, we are passing in the X and Y coordinates of the birds.
 
-In the first example, `positionSmallBird(300,0)` we are passing the coordinates directly. You can change these values and see what the effect is by pressing the refresh button in the Preview tab.
+In the first example, `positionSmallBird(300,0)` we are passing the coordinate parameters directly. You can change these values and see what the effect is by pressing the refresh button in the Preview tab.
 
-In the second example, `positionBigBird(xBird, yBird)` we are passing variables, whose values we set in further up the code.
+In the second example, `positionBigBird(xBird, yBird)` we are passing variables as parameters. We set the variable values further up the code.
 
 ###DEFN:
-A variable is a placeholder that is given a name you choose that helps you identify its purpose. The variable name should only contain letters, characters and the '-' or '_' characters.
-
-Variables should be defined (`var xBird`) before they are assigned values (`xBird=100`).
+1. A variable is a place where you can store a value. 
+1. You give your variable a name you choose that helps you identify its purpose. 
+1. The variable name should only contain letters, characters and the '-' or '_' characters. It should not have spaces.
+1. Variables should be defined (`var xBird`) before they are assigned values (`xBird=100`).
 
 We'll move on to more interesting uses of variables in the next sections.
 
@@ -92,18 +102,18 @@ layout: ""
 step: 2-var-3birds
 
 ---
-Now take a look at the new code that's opened up on the left. We've got 3 birds this time.
+Now take a look at the new code that's opened up on the left. Click on the `main.js` tab to see it. We've got 3 birds this time but they're not roosting nicely.
 
 ##Challenge
-You should get all 3 birds to sit on the branch. 
+You should get all 3 birds to sit on the branch like this.
 
 ![](.guides/img/var-bird-branch-3.png)
 
-It's not that exciting but you should note it is a bit tedious setting 6 variables.
+After you have changed the code, be sure to press the refresh button in the Preview window.
 
-In the next section, we'll explain how to make this a lot more efficient.
+It's not that exciting but you should note how it is a bit tedious setting 6 variables.
 
-Once you've got them roosting, move to the next section.
+In the next section, we'll explain how to make this a lot more efficient. Once you've got them roosting, move to the next section.
 
 ---
 title: 3 better birds on a branch
@@ -120,15 +130,19 @@ layout: ""
 step: 3-var-3birds
 
 ---
-Now take a look at the new code on the left. You'll see that we have much shorter code. 
+Now take a look at the new `main.js` code on the left. You'll see that we have much shorter code. 
 
-What we did here was to analyze what is going on and break it down into the following thought process
+What we did here was to analyze what is going on and break it down as follows.
 
-1. To get all 3 birds to sit on the branch, they all have the same Y coordinate.
-1. Let's figure out the position of the first bird and then put a `gap` between the second and the third birds.
+1. To get all 3 birds to sit on the branch, we note that they all have the same Y coordinate.
+1. So, let's figure out the position of the first bird and get it in the right place.
+1. To get the desired effect, we can simply space them out evenly across the branch.
+1. To achieve this, we'll create a variable `gap` and use that to calculate the position of the second and third birds.
+
+Having figured this out, we can write the code easily. However, we have not got good values for the `x`, `y` and `gap` variables.
 
 ##Challenge
-Set the variables so you have the 3 birds evenly spaced on the branch in the sae way you did before.
+Set the variables so you have the 3 birds are roosting evenly on the branch in the same way you did before. After you have changed the code, be sure to press the refresh button in the Preview window.
 
 ![](.guides/img/var-bird-branch-3.png)
 

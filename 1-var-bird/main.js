@@ -6,7 +6,7 @@ function main() {
   xBird = 100;
   yBird = 50;
   
-  positionSmallBird(300,0)
+  positionSmallBird(0,0);
   positionBigBird(xBird, yBird);
   
 }

@@ -6,8 +6,5 @@
 }
 
 #bird1 img {
-  position:fixed;
-  top: 10px;
-  left: 10px;
   width: 150px;
 }
