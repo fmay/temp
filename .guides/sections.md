@@ -158,7 +158,23 @@ An algorithm is a set of steps that solves a problem. In programming, this norma
 
 ---
 title: A new way of placing birds
-files: []
+files:
+  - action: close
+    path: "#tabs"
+  - action: open
+    path: "4-preloops/main.,js"
+    panel: 0
+    index: 0
+    type: file
+    arg: "4-preloops/main.,js"
+  - action: open
+    path: "#preview: 4-preloops/index.html"
+    panel: 0
+    index: 1
+    type: preview
+    arg: 4-preloops/index.html
+layout: ""
+step: 4-preloops
 
 ---
 Now, we are going to look at an entirely different way to create and position our birds.
@@ -175,7 +191,23 @@ Imagine that there were 20 birds and we know that they should all be equally spa
 As you will see in the next section, there is a really elegant way of making this much easier.
 ---
 title: Looping birds
-files: []
+files:
+  - action: close
+    path: "#tabs"
+  - action: open
+    path: "5-while/main,js"
+    panel: 0
+    index: 0
+    type: file
+    arg: "5-while/main,js"
+  - action: open
+    path: "#preview: 5-while/index.html"
+    panel: 0
+    index: 1
+    type: preview
+    arg: 5-while/index.html
+layout: ""
+step: 5-while
 
 ---
 Now we are going to take a different approach to getting our 7 birds to roost. We are going to introduce the concept of loops.
@@ -186,14 +218,38 @@ You may remember from an earlier section that we figured out we only need to kno
 positionBirds(x, y, x+gap, y, x+gap*2, y);
 ```
 
-Our code uses the same throught process using a loop.
+Our code uses this same approach but instead it uses a *while* loop.
+
+What we are doing is ...
+
+1. Initialize our variables
+1. We now put the bird creation function call inside our *while* loop
+1. Create the new bird and place it at the specified coordinate. Study the formula for the X coordinate `initialX + gap*counter` and imagine what it is doing. The first time it is in the loop, `counter` is 0. The second time through, it will be 1 and so on.
+1. Next, we add 1 to our `counter` variable
+1. At the end of the loop, we go back to the start of the loop. If `counter` is less than 7, it will run through the loop again. Once it finally reaches 7, it will exit the loop and execute any commands that come afterwards (there aren't any here).
+
+##ANIMATION
+
+
+##DEFN
+A *while* loop is defined as follows.
+
+```js
+  while(some condition) {
+    some instuctions
+  }
+```
+
+While `some condition` is true, execute `some instructions` within the opening `{` and the closing `}`. It will continue to loop forever or until `some condition` is false.
+
+In our example, `some condition` is `counter is less than 7`. If `counter` has any value between 0 and 6, the `counter<7` is true and so your code will continue to loop around.
+
+As soon as `counter` reaches 7, the `counter<7` is false and so the loop stops executing.
 
 
 
-What we are going to do here is
 
-1. Create a new bird and place it at the specified coordinate.
-1. Repeat this any number of times, we'll start with 3.
+
 
 
 ---
