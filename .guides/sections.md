@@ -1,7 +1,16 @@
 ---
 title: Variables
-files: []
+files:
+  - action: close
+    path: "#tabs"
+  - action: open
+    path: 1-var-bird/main.js
+    panel: 0
+  - action: open
+    path: "#preview: 1-var-bird/index.html"
+    panel: 0
 layout: 2-panels-tree
+step: 1-var-bird
 
 ---
 We are going to start our introduction to programming, also known as *coding* by looking at something common to all programming languages - **variables**.
@@ -11,9 +20,9 @@ Rather than explain what a variable is, let's dive straight into some code and s
 Right now, you should see two tabs open up on the left hand side.
 
 1. The tab that is hidden from view contains some code.
-1. The tab that is visible contains is the *Preview* window, which shows our program running.
+1. The tab that is visible contains is the *Preview* window, which shows our program running. You can refresh the Preview if you change code by hitting the refresh button at the top left of that window.
 
-You can click each of the tabs to view them.
+You can click each of the tabs to view them. Go ahead and try it.
 
 You should see a picture of a bird and a branch (see below).
 
@@ -70,10 +79,20 @@ We'll move on to more interesting uses of variables in the next sections.
 
 ---
 title: 3 birds on a branch
-files: []
+files:
+  - action: close
+    path: "#tabs"
+  - action: open
+    path: 2-var-3birds/main.js
+    panel: 0
+  - action: open
+    path: "#preview: 2-var-3birds/index.html"
+    panel: 0
+layout: ""
+step: 2-var-3birds
 
 ---
-Now take a look at the code that's opened up on the left. We've got 3 birds this time.
+Now take a look at the new code that's opened up on the left. We've got 3 birds this time.
 
 ##Challenge
 You should get all 3 birds to sit on the branch. 
@@ -88,10 +107,20 @@ Once you've got them roosting, move to the next section.
 
 ---
 title: 3 better birds on a branch
-files: []
+files:
+  - action: close
+    path: "#tabs"
+  - action: open
+    path: 3-var-3birds/main.js
+    panel: 0
+  - action: open
+    path: "#preview: 3-var-3birds/index.html"
+    panel: 0
+layout: ""
+step: 3-var-3birds
 
 ---
-Now take a look at the code. You'll see that we have much shorter code. 
+Now take a look at the new code on the left. You'll see that we have much shorter code. 
 
 What we did here was to analyze what is going on and break it down into the following thought process
 
@@ -99,9 +128,11 @@ What we did here was to analyze what is going on and break it down into the foll
 1. Let's figure out the position of the first bird and then put a `gap` between the second and the third birds.
 
 ##Challenge
-Set the variables so you have the 3 birds evenly spaced on the branch.
+Set the variables so you have the 3 birds evenly spaced on the branch in the sae way you did before.
 
-Make sure you understand how this works. This is an example of a very simple *algorithm*. 
+![](.guides/img/var-bird-branch-3.png)
+
+Look at the code and make sure you understand how it works. This is an example of a very simple *algorithm*. 
 
 ###DEFN
 An algorithm is a set of steps that solves a problem. In programming, this normally involves the following steps
