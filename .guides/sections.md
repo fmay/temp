@@ -74,9 +74,9 @@ So let's look at the code and discuss it.
 
 A function can take parameters. In our example, we are passing in the X and Y coordinates of the birds.
 
-In the first example, `positionSmallBird(300,0)` we are passing the coordinate parameters directly. You can change these values and see what the effect is by pressing the refresh button in the Preview tab.
+In the first example, `positionSmallBird(300,0)` we are passing the coordinate parameters 300 (X) and 0 (Y) directly. You can change these values and see what the effect is by pressing the refresh button in the Preview tab.
 
-In the second example, `positionBigBird(xBird, yBird)` we are passing variables as parameters. We set the variable values further up the code.
+In the second example, `positionBigBird(xBird, yBird)` we are passing variables as parameters. We set the variable values a few lines earlier in the code.
 
 ###DEFN:
 1. A variable is a place where you can store a value. 
@@ -157,15 +157,27 @@ An algorithm is a set of steps that solves a problem. In programming, this norma
 
 
 ---
-title: New Section 6
+title: New Section 7
 files: []
 
 ---
 
 ---
-title: New Section 7
+title: Looping birds
+files: []
 
 ---
+Now we are going to take a different approach to getting our 3 birds to roost. We are going to introduce the concept of loops.
+
+Look at the code in the `main.js` tab and notice how we are now positioning an individual bird, rather than all 3 at once.
+
+To do this we are using a *loop*. Loops can be found in all programming languages and are a critical concept to understand.
+
+What we are going to do here is
+
+1. Create a new bird and place it at the specified coordinate.
+1. Repeat this any number of times, we'll start with 3.
+
 
 ---
 title: New Section 8
