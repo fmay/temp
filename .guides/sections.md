@@ -190,7 +190,7 @@ Imagine that there were 20 birds and we know that they should all be equally spa
 
 As you will see in the next section, there is a really elegant way of making this much easier.
 ---
-title: Looping birds
+title: While birds do loop
 files:
   - action: close
     path: "#tabs"
@@ -253,7 +253,33 @@ As soon as `counter` reaches 7, the `counter<7` is false and so the loop stops e
 
 
 ---
-title: New Section 8
+title: For birds do also loop
 files: []
 
 ---
+We'll now introduce another kind of loop - the *for* loop. The for loop does exactly the same thing as the *while* loop, but it does it in a slightly different way.
+
+The *while* loop statement just deals with the condition, so `while(counter<7)` in our previous example.
+
+The *for* loop statement allows you to handle the following things
+
+1. The initialization of your variables.
+1. The condition.
+1. What happens at the very end of the loop.
+
+If you take a look at the `main.js` code, you can see how this statement
+
+```js
+for(initialX=50, gap=60, counter=0; counter<7; counter++)
+```
+
+1. Initialises our variables in the first part of the statement, before the first `;`, so `initialX=50, gap=60, counter=0`.
+1. Tests for the same condition for the loop to continue executing.
+1. Increments the `counter` variable by 1. `counter++` is Javascript shorthand for `counter=counter+1`.
+
+##While or For?
+It's really a matter of personal preference. For loops can result in shorter (terser) code as they do more in a single line. You can always substitute a for loop for a while loop and vice-versa.
+
+##Video
+Let's have a look at a video that helps you visualise what's going on with our loop.
+

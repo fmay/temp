@@ -1,12 +1,12 @@
 
 function main() {
 
-  createBird(150, 370);
-  createBird(210, 370);
-  createBird(260, 370);
-  createBird(320, 370);
-  createBird(380, 370);
-  createBird(440, 370);
-  createBird(500, 370);  
+  createBird(50, 170);
+  createBird(110, 170);
+  createBird(160, 170);
+  createBird(220, 170);
+  createBird(280, 170);
+  createBird(340, 170);
+  createBird(400, 170);  
   
 }
