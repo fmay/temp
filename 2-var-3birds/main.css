@@ -1,0 +1,9 @@
+#branch {
+  position: fixed;
+  top: 300px;
+  left: 100px;
+}
+
+#bird1 img, #bird2 img, #bird3 img {
+  width: 100px;
+}

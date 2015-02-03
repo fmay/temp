@@ -69,8 +69,61 @@ We'll move on to more interesting uses of variables in the next sections.
 
 
 ---
-title: Example section 4
+title: 3 birds on a branch
 files: []
 
 ---
-Some **awesome** content 4
+Now take a look at the code that's opened up on the left. We've got 3 birds this time.
+
+##Challenge
+You should get all 3 birds to sit on the branch. 
+
+![](.guides/img/var-bird-branch-3.png)
+
+It's not that exciting but you should note it is a bit tedious setting 6 variables.
+
+In the next section, we'll explain how to make this a lot more efficient.
+
+Once you've got them roosting, move to the next section.
+
+---
+title: 3 better birds on a branch
+files: []
+
+---
+Now take a look at the code. You'll see that we have much shorter code. 
+
+What we did here was to analyze what is going on and break it down into the following thought process
+
+1. To get all 3 birds to sit on the branch, they all have the same Y coordinate.
+1. Let's figure out the position of the first bird and then put a `gap` between the second and the third birds.
+
+##Challenge
+Set the variables so you have the 3 birds evenly spaced on the branch.
+
+Make sure you understand how this works. This is an example of a very simple *algorithm*. 
+
+###DEFN
+An algorithm is a set of steps that solves a problem. In programming, this normally involves the following steps
+
+1. Analyze the problem
+1. Look for ways of breaking down that problem into small steps. Often, you will create a flowchart as a way of visualizing these steps.
+1. Look at ways of making those steps as efficient as possible and having as few steps as possible. This is a really important steps as an efficient algorithm usually results in smaller, faster code.
+
+
+---
+title: New Section 6
+files: []
+
+---
+
+---
+title: New Section 7
+
+---
+
+---
+title: New Section 8
+files: []
+
+---
