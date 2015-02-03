@@ -10,7 +10,7 @@ function createBird(x, y) {
   bird.style.position = "fixed";
   bird.style.top = y + "px";
   bird.style.left = x + "px";
-  bird.style.width = "100px";
+  bird.style.width = "50px";
   bird.setAttribute("id", "bird" + birdCount++);
   bird.setAttribute("src", "bird.png");
   document.body.appendChild(bird);

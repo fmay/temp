@@ -157,21 +157,38 @@ An algorithm is a set of steps that solves a problem. In programming, this norma
 
 
 ---
-title: New Section 7
+title: A new way of placing birds
 files: []
 
 ---
+Now, we are going to look at an entirely different way to create and position our birds.
 
+Take a look at the code and you can see that we've provided a new function `createBird`. This function 
+
+1. Creates a brand new bird.
+1. Positions it at the desired coordinate.
+
+You can also see that to position 7 birds, we call the same function 7 times but with different coordinates for each one. 
+
+Imagine that there were 20 birds and we know that they should all be equally spaced along the branch. Doing it 20 times would be slow and we would spend a lot of time typing out each coordinate, probably making a few errors along the way.
+
+As you will see in the next section, there is a really elegant way of making this much easier.
 ---
 title: Looping birds
 files: []
 
 ---
-Now we are going to take a different approach to getting our 3 birds to roost. We are going to introduce the concept of loops.
+Now we are going to take a different approach to getting our 7 birds to roost. We are going to introduce the concept of loops.
 
-Look at the code in the `main.js` tab and notice how we are now positioning an individual bird, rather than all 3 at once.
+You may remember from an earlier section that we figured out we only need to know the position of the first bird before adding the `gap` to the x coordinate of each bird.
 
-To do this we are using a *loop*. Loops can be found in all programming languages and are a critical concept to understand.
+```js
+positionBirds(x, y, x+gap, y, x+gap*2, y);
+```
+
+Our code uses the same throught process using a loop.
+
+
 
 What we are going to do here is
 
