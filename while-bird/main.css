@@ -1,0 +1,9 @@
+
+#text {
+  font-family: "Arial";
+  font-size: 40px;
+}
+
+#bird1 img, #bird2 img, #bird3 img {
+  width: 100px;
+}
