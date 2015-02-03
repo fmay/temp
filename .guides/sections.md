@@ -56,7 +56,18 @@ So let's look at the code and discuss it.
 
 A function can take parameters. In our example, we are passing in the X and Y coordinates of the birds.
 
-In the first example, we are passing
+In the first example, `positionSmallBird(300,0)` we are passing the coordinates directly. You can change these values and see what the effect is by pressing the refresh button in the Preview tab.
+
+In the second example, `positionBigBird(xBird, yBird)` we are passing variables, whose values we set in further up the code.
+
+###DEFN:
+A variable is a placeholder that is given a name you choose that helps you identify its purpose. The variable name should only contain letters, characters and the '-' or '_' characters.
+
+Variables should be defined (`var xBird`) before they are assigned values (`xBird=100`).
+
+We'll move on to more interesting uses of variables in the next sections.
+
+
 ---
 title: Example section 4
 files: []
