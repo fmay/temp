@@ -7,4 +7,13 @@
 
 #bird1 img {
   width: 150px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+#bird2 img {
+  position: fixed;
+  top: 10px;
+  left: 10px;
 }

@@ -4,9 +4,9 @@ function main() {
   var xBird, yBird;
   
   xBird = 100;
-  yBird = 50;
+  yBird = 100;
   
-  positionSmallBird(0,0);
+  positionSmallBird(100,50);
   positionBigBird(xBird, yBird);
   
 }

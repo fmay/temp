@@ -45,6 +45,11 @@ Click the code tab `main.js` on the left. If you can't see it, click on `main.js
 
 You will see that there are two lines of code that control the big and small birds.
 
+##How a program runs
+So, how does this piece of code actually run? Take a look at the video below and we'll show you what happens.
+
+
+
 ##Challenge
 Can you see how to sit both birds on the branch by adjusting the coordinates?
 
@@ -195,17 +200,11 @@ files:
   - action: close
     path: "#tabs"
   - action: open
-    path: "5-while/main,js"
+    path: 5-while/main.js
     panel: 0
-    index: 0
-    type: file
-    arg: "5-while/main,js"
   - action: open
     path: "#preview: 5-while/index.html"
     panel: 0
-    index: 1
-    type: preview
-    arg: 5-while/index.html
 layout: ""
 step: 5-while
 
@@ -228,7 +227,8 @@ What we are doing is ...
 1. Next, we add 1 to our `counter` variable
 1. At the end of the loop, we go back to the start of the loop. If `counter` is less than 7, it will run through the loop again. Once it finally reaches 7, it will exit the loop and execute any commands that come afterwards (there aren't any here).
 
-##ANIMATION
+##VIDEO
+Let's have a look at a video that helps you visualise what's going on with our loop.
 
 
 ##DEFN
@@ -254,7 +254,17 @@ As soon as `counter` reaches 7, the `counter<7` is false and so the loop stops e
 
 ---
 title: For birds do also loop
-files: []
+files:
+  - action: close
+    path: "#tabs"
+  - action: open
+    path: 6-for/main.js
+    panel: 0
+  - action: open
+    path: "#preview: 6-for/index.html"
+    panel: 0
+layout: ""
+step: 6-for
 
 ---
 We'll now introduce another kind of loop - the *for* loop. The for loop does exactly the same thing as the *while* loop, but it does it in a slightly different way.
