@@ -43,9 +43,10 @@ files: []
 ---
 Click the code tab `main.js` on the left. If you can't see it, click on `main.js` in the *file tree* on the far left side. `main.js` is a simple piece of Javascript code. 
 
-##How a program runs
+##How does a program "run"?
 So, how does this piece of code actually run? Take a look at the video below and we'll explain what happens before you start to hack the code around yourself. 
 
+![VIDEO]
 
 
 ##Challenge
@@ -71,11 +72,18 @@ So let's look at the code and discuss it.
   positionSmallBird(300,0)
   positionBigBird(xBird, yBird);
 ```
+##Variables
+1. A variable is a place where you can store a value. 
+1. You give your variable a name you choose that helps you identify its purpose (xBird is a variable that holds the X coordinate of a bird)
+1. The variable name should only contain letters, characters and the '-' or '_' characters. It may also not have spaces.
+1. Define your variables (`var xBird`) before you assign them a value (`xBird=100`).
+
+We'll move on to more interesting uses of variables in the next sections.
 
 ##Functions
-`positionSmallBird` and `positionBigBird` are called *functions*. A function is simply another piece of code that we can *call* from within our code. To see what happens in the background, watch teh video below.
+`positionSmallBird` and `positionBigBird` are called *functions*. A function is simply another piece of code that we *call* from within our code. To see what happens when our code calls a function, watch the video below.
 
-![VIDEO]
+![VIDEO:stepping into the function]
 
 A function can take parameters. In our example, we are passing in the X and Y coordinates of the birds.
 
@@ -83,13 +91,7 @@ In the first example, `positionSmallBird(300,0)` we are passing the coordinate p
 
 In the second example, `positionBigBird(xBird, yBird)` we are passing variables as parameters. We set the variable values a few lines earlier in the code.
 
-###DEFN:
-1. A variable is a place where you can store a value. 
-1. You give your variable a name you choose that helps you identify its purpose. 
-1. The variable name should only contain letters, characters and the '-' or '_' characters. It should not have spaces.
-1. Variables should be defined (`var xBird`) before they are assigned values (`xBird=100`).
 
-We'll move on to more interesting uses of variables in the next sections.
 
 
 ---
