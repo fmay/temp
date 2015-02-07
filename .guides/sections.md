@@ -148,9 +148,15 @@ files:
   - action: open
     path: 3-var-3birds/main.js
     panel: 0
+    index: 0
+    type: file
+    arg: 3-var-3birds/main.js
   - action: open
     path: "#preview: 3-var-3birds/index.html"
     panel: 0
+    index: 1
+    type: preview
+    arg: 3-var-3birds/index.html
 layout: ""
 step: 3-var-3birds
 
@@ -185,17 +191,11 @@ files:
   - action: close
     path: "#tabs"
   - action: open
-    path: "4-preloops/main.,js"
+    path: 4-preloops/main.js
     panel: 0
-    index: 0
-    type: file
-    arg: "4-preloops/main.,js"
   - action: open
     path: "#preview: 4-preloops/index.html"
     panel: 0
-    index: 1
-    type: preview
-    arg: 4-preloops/index.html
 layout: ""
 step: 4-preloops
 
@@ -205,7 +205,7 @@ Now, we are going to look at an entirely different way to create and position ou
 Take a look at the code and you can see that we've provided a new function `createBird`. This function 
 
 1. Creates a brand new bird.
-1. Positions it at the desired coordinate.
+1. Positions it at the specified coordinate.
 
 You can also see that to position 7 birds, we call the same function 7 times but with different coordinates for each one. 
 
@@ -235,19 +235,19 @@ You may remember from an earlier section that we figured out we only need to kno
 positionBirds(x, y, x+gap, y, x+gap*2, y);
 ```
 
-Our code uses this same approach but instead it uses a *while* loop.
+Our new code uses this same approach but instead it uses a *while* loop.
 
-What we are doing is ...
+What we are do is ...
 
-1. Initialize our variables
-1. We now put the bird creation function call inside our *while* loop
-1. Create the new bird and place it at the specified coordinate. Study the formula for the X coordinate `initialX + gap*counter` and imagine what it is doing. The first time it is in the loop, `counter` is 0. The second time through, it will be 1 and so on.
+1. *Initialize* our variables, in other words we assign them their starting values.
+1. We now put the bird creation function call `createBird` inside a *while* loop, which creates the new bird and places it at the specified coordinate. Study the formula for the X coordinate `initialX + gap*counter` and make sure you understand what it is doing. The first time it is in the loop, `counter` is 0. The second time through, it will be 1 and so on.
 1. Next, we add 1 to our `counter` variable
 1. At the end of the loop, we go back to the start of the loop. If `counter` is less than 7, it will run through the loop again. Once it finally reaches 7, it will exit the loop and execute any commands that come afterwards (there aren't any here).
 
 ##VIDEO
-Let's have a look at a video that helps you visualise what's going on with our loop.
+Looks at this video to help you visualise what's going on with our loop.
 
+![VIDEO]
 
 ##DEFN
 A *while* loop is defined as follows.
@@ -271,7 +271,7 @@ As soon as `counter` reaches 7, the `counter<7` is false and so the loop stops e
 
 
 ---
-title: For birds do also loop
+title: For birds also loop
 files:
   - action: close
     path: "#tabs"
@@ -285,9 +285,9 @@ layout: ""
 step: 6-for
 
 ---
-We'll now introduce another kind of loop - the *for* loop. The for loop does exactly the same thing as the *while* loop, but it does it in a slightly different way.
+We'll now introduce another kind of loop - the *for* loop. The for loop does exactly the same thing as the *while* loop, but it does it in a slightly different way. It is generally preferred to *while* loops in Javascript.
 
-The *while* loop statement just deals with the condition, so `while(counter<7)` in our previous example.
+The *while* loop statement just deals with the condition (`while(counter<7)` in our previous example).
 
 The *for* loop statement allows you to handle the following things
 
@@ -301,13 +301,15 @@ If you take a look at the `main.js` code, you can see how this statement
 for(initialX=50, gap=60, counter=0; counter<7; counter++)
 ```
 
-1. Initialises our variables in the first part of the statement, before the first `;`, so `initialX=50, gap=60, counter=0`.
-1. Tests for the same condition for the loop to continue executing.
-1. Increments the `counter` variable by 1. `counter++` is Javascript shorthand for `counter=counter+1`.
-
-##While or For?
-It's really a matter of personal preference. For loops can result in shorter (terser) code as they do more in a single line. You can always substitute a for loop for a while loop and vice-versa.
+1. Initialises the variables you specify in the first part of the statement, before the first `;` so in our code `initialX=50, gap=60, counter=0`.
+1. After the first `;` comes the condition for the loop to continue executing, which is `counter<7`
+1. After the second `;` you specify what should happen at the end of the loop. In our case, it increments the `counter` variable by 1. `counter++` is Javascript shorthand for `counter=counter+1`.
 
 ##Video
 Let's have a look at a video that helps you visualise what's going on with our loop.
+
+##While or For?
+For loops can result in shorter (terser) code as they do more in a single line. Most Javascript programmers prefer the *for* loop to the *while* loop.
+
+
 
