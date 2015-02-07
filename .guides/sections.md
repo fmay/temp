@@ -57,7 +57,7 @@ Can you see how to sit both birds on the branch by adjusting the coordinates in 
 We'll describe what's going on in the next section.
 
 ---
-title: Functions and Variables
+title: Variables
 files: []
 
 ---
@@ -72,6 +72,7 @@ So let's look at the code and discuss it.
   positionSmallBird(300,0)
   positionBigBird(xBird, yBird);
 ```
+
 ##Variables
 1. A variable is a place where you can store a value. 
 1. You give your variable a name you choose that helps you identify its purpose (xBird is a variable that holds the X coordinate of a bird)
@@ -80,19 +81,36 @@ So let's look at the code and discuss it.
 
 We'll move on to more interesting uses of variables in the next sections.
 
-##Functions
-`positionSmallBird` and `positionBigBird` are called *functions*. A function is simply another piece of code that we *call* from within our code. To see what happens when our code calls a function, watch the video below.
+
+
+
+---
+title: Functions
+files: []
+
+---
+```javascript
+  var xBird, yBird;
+  
+  xBird = 100;
+  yBird = 50;
+  
+  positionSmallBird(300,0)
+  positionBigBird(xBird, yBird);
+```
+
+`positionSmallBird` and `positionBigBird` are called *functions*. A function is simply another piece of code that we *call* from within our code. 
+
+##Seeing how functions work
+To see what happens when our code calls a function, watch this video.
 
 ![VIDEO:stepping into the function]
 
-A function can take parameters. In our example, we are passing in the X and Y coordinates of the birds.
+A function can take parameters. In our example function calls, we are passing in the X and Y coordinates of the birds.
 
 In the first example, `positionSmallBird(300,0)` we are passing the coordinate parameters 300 (X) and 0 (Y) directly. You can change these values and see what the effect is by pressing the refresh button in the Preview tab.
 
 In the second example, `positionBigBird(xBird, yBird)` we are passing variables as parameters. We set the variable values a few lines earlier in the code.
-
-
-
 
 ---
 title: 3 birds on a branch
@@ -142,18 +160,16 @@ Now take a look at the new `main.js` code on the left. You'll see that we have m
 What we did here was to analyze what is going on and break it down as follows.
 
 1. To get all 3 birds to sit on the branch, we note that they all have the same Y coordinate.
-1. So, let's figure out the position of the first bird and get it in the right place.
-1. To get the desired effect, we can simply space them out evenly across the branch.
+1. So, let's figure out the coordinate of the first bird and get it sitting on the left of the branch.
+1. To get the desired effect, we can simply space the other birds out evenly across the branch.
 1. To achieve this, we'll create a variable `gap` and use that to calculate the position of the second and third birds.
 
-Having figured this out, we can write the code easily. However, we have not got good values for the `x`, `y` and `gap` variables.
+Look at the code and make sure you understand how it works. The abive approach is an example of a very simple *algorithm*. 
 
 ##Challenge
 Set the variables so you have the 3 birds are roosting evenly on the branch in the same way you did before. After you have changed the code, be sure to press the refresh button in the Preview window.
 
 ![](.guides/img/var-bird-branch-3.png)
-
-Look at the code and make sure you understand how it works. This is an example of a very simple *algorithm*. 
 
 ###DEFN
 An algorithm is a set of steps that solves a problem. In programming, this normally involves the following steps
