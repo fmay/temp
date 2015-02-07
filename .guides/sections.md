@@ -41,17 +41,15 @@ title: Sit the bird on the branch
 files: []
 
 ---
-Click the code tab `main.js` on the left. If you can't see it, click on `main.js` in the *file tree* on the far left side.
-
-You will see that there are two lines of code that control the big and small birds.
+Click the code tab `main.js` on the left. If you can't see it, click on `main.js` in the *file tree* on the far left side. `main.js` is a simple piece of Javascript code. 
 
 ##How a program runs
-So, how does this piece of code actually run? Take a look at the video below and we'll show you what happens.
+So, how does this piece of code actually run? Take a look at the video below and we'll explain what happens before you start to hack the code around yourself. 
 
 
 
 ##Challenge
-Can you see how to sit both birds on the branch by adjusting the coordinates?
+Can you see how to sit both birds on the branch by adjusting the coordinates in `main.js`? Press the refresh button in the Preview tab after making changes.
 
 ![](.guides/img/var-bird-positioned.png)
 
@@ -75,7 +73,9 @@ So let's look at the code and discuss it.
 ```
 
 ##Functions
-`positionSmallBird` and `positionBigBird` are called *functions*. A function is simply another piece of code that we can *call* from within our code.
+`positionSmallBird` and `positionBigBird` are called *functions*. A function is simply another piece of code that we can *call* from within our code. To see what happens in the background, watch teh video below.
+
+![VIDEO]
 
 A function can take parameters. In our example, we are passing in the X and Y coordinates of the birds.
 

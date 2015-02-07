@@ -5,15 +5,18 @@
   left: 0px;
 }
 
-#bird1 img {
-  width: 150px;
+#bird1  {
   position: fixed;
   top: 10px;
   left: 10px;
 }
 
-#bird2 img {
+#bird1 img {
+  width: 150px;
+}
+
+#bird2  {
   position: fixed;
   top: 10px;
-  left: 10px;
+  left: 50px;
 }
