@@ -1,6 +1,6 @@
 
 // Global Variables
-var currentX=120;
+var currentX=110;
 var currentY=290;
 
 function checkBird(x) {
@@ -11,9 +11,9 @@ function checkBird(x) {
   else {
     createBird(currentX, currentY);
     currentX = currentX + 60;
-    if(currentX > 400) {
+    if(currentX > 360) {
       currentY += 80;
-      currentX = 120;
+      currentX = 110;
     }
   }
 

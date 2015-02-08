@@ -313,3 +313,47 @@ For loops can result in shorter (terser) code as they do more in a single line. 
 
 
 
+
+---
+title: "If this then that, else the other"
+files: []
+
+---
+We only just figured out loops and now it's time to move on to another one of those things you need to master, *conditional statements*.
+
+##Example
+Before we go into any detail, let's look at an example. Sticking with our birds, let's see how we deal with the following scenario.
+
+1. We position our birds on the branch with a reasonable gap between each bird.
+1. Birds that haven't got room to sit on the branch, should be put in a cage.
+
+![](.guides/img/var-bird-branch-3.png)
+
+## Thinking about it in coding terms
+Step 1 above is handled by our *for* loop. It will keep on positioning birds off the right end of the branch and then off the screen.
+
+So, how do we deal with the end of the branch? Let's break this down into steps.
+
+1. If `calcX`, the calculated x coordinate, is greater than the x coordinate of the right hand end of the branch, then put it in the cage.
+1. The cage is simply an image on our page and if the above case holds, then we will create our bird there instead.
+
+## Conditional Statements
+Our conditional statement is **`if calcX > xxx then createdBird(xxx,yyy)`**
+
+In Javascript, an `if` statement looks like this
+
+```js
+if(condition is true) {
+  execute all lines within the { } block
+}
+else {
+  otherwise execute these ones instead
+}
+```
+
+The `else` bit is interesting in that it allows us to specify code to execute if the condition is *not* true.
+
+
+
+
+
