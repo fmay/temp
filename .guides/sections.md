@@ -278,9 +278,15 @@ files:
   - action: open
     path: 6-for/main.js
     panel: 0
+    index: 0
+    type: file
+    arg: 6-for/main.js
   - action: open
     path: "#preview: 6-for/index.html"
     panel: 0
+    index: 1
+    type: preview
+    arg: 6-for/index.html
 layout: ""
 step: 6-for
 
@@ -316,7 +322,17 @@ For loops can result in shorter (terser) code as they do more in a single line. 
 
 ---
 title: "If this then that, else the other"
-files: []
+files:
+  - action: close
+    path: "#tabs"
+  - action: open
+    path: 7-if/main.js
+    panel: 0
+  - action: open
+    path: "#preview: 7-if/index.html"
+    panel: 0
+layout: ""
+step: 7-if
 
 ---
 We only just figured out loops and now it's time to move on to another one of those things you need to master, *conditional statements*.
@@ -334,25 +350,50 @@ Step 1 above is handled by our *for* loop. It will keep on positioning birds off
 
 So, how do we deal with the end of the branch? Let's break this down into steps.
 
-1. If `calcX`, the calculated x coordinate, is greater than the x coordinate of the right hand end of the branch, then put it in the cage.
-1. The cage is simply an image on our page and if the above case holds, then we will create our bird there instead.
+ - If `calcX`, the calculated x coordinate, is greater than the x coordinate of the right hand end of the branch, then put it in the cage (which is simply an image on our page, where we will locate the bird).
+ 
+## Look at the code
+Although we've done a video explanation, take a look at the code in `main.js` and see if you can explain to yourself what is going on.
 
-## Conditional Statements
-Our conditional statement is **`if calcX > xxx then createdBird(xxx,yyy)`**
+## Look at the video
+Take a look at the video which explains the whole process in detail.
+
+
+ 
+
+
+
+---
+title: Conditional Statements
+files: []
+
+---
+So, here is the formal explanation of a Javascript *conditional statement*.
 
 In Javascript, an `if` statement looks like this
 
 ```js
 if(condition is true) {
-  execute all lines within the { } block
+  execute all lines within this { } block
 }
 else {
-  otherwise execute these ones instead
+  otherwise execute this { } block instead
 }
 ```
 
-The `else` bit is interesting in that it allows us to specify code to execute if the condition is *not* true.
+In fact, you can chain lots of conditions as shown below. Here, it runs through the `if` list until it finds a condition that is true. If none are true, then it executes the `else` block. Notice that there are no `{ }` block brackets in the example below. If there is only one statement in the block, you can omit them.
 
+```js
+if (condition1)
+   statement1
+else if (condition2)
+   statement2
+else if (condition3)
+   statement3
+...
+else
+   statementN
+```
 
 
 
