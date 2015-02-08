@@ -335,7 +335,7 @@ layout: ""
 step: 7-if
 
 ---
-We only just figured out loops and now it's time to move on to another one of those things you need to master, *conditional statements*.
+We only just figured out loops and now it's time to move on to another of those things you need to master, *conditional statements*.
 
 ##Example
 Before we go into any detail, let's look at an example. Sticking with our birds, let's see how we deal with the following scenario.
@@ -398,3 +398,32 @@ else
 
 
 
+
+---
+title: Lots of caged birds
+files:
+  - action: close
+    path: "#tabs"
+  - action: open
+    path: 7-if-2/main.js
+    panel: 0
+  - action: open
+    path: "#preview: 7-if-2/index.html"
+    panel: 0
+layout: ""
+step: 7-if-2
+
+---
+Take a look at the preview now. It is more interesting in that all of our caged birds are neatly laid out.
+
+Take a look at `main.js` and see if you can figure out how it works. 
+
+## Video
+Here's a video if you want the guided tour of the code.
+
+## Nested if statements
+There is no pun intended here, but if you look at the code, you can see an example of *nesting*. 
+
+Nesting is where a statement of one type (`if` in this case) is nested, or sits within a statement of the same type.
+
+`

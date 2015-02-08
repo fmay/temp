@@ -1,7 +1,7 @@
 
 function checkBird(x) {
   
-  if(x<300) {
+  if(x<450) {
     createBird(x, 120);
   }
   else {
@@ -16,7 +16,7 @@ function main() {
   var counter;
   
   // Here's the loop
-  for(initialX=50, gap=60, counter=0; counter<7; counter++) {
+  for(initialX=50, gap=60, counter=0; counter<20; counter++) {
     calcX = initialX + gap*counter;
     checkBird(calcX);  
   }
