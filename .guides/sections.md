@@ -343,14 +343,14 @@ Before we go into any detail, let's look at an example. Sticking with our birds,
 1. We position our birds on the branch with a reasonable gap between each bird.
 1. Birds that haven't got room to sit on the branch, should be put in a cage.
 
-![](.guides/img/var-bird-branch-3.png)
+![](.guides/img/bird-if-1.png)
 
 ## Thinking about it in coding terms
 Step 1 above is handled by our *for* loop. It will keep on positioning birds off the right end of the branch and then off the screen.
 
 So, how do we deal with the end of the branch? Let's break this down into steps.
 
- - If `calcX`, the calculated x coordinate, is greater than the x coordinate of the right hand end of the branch, then put it in the cage (which is simply an image on our page, where we will locate the bird).
+ - If `calcX`, the calculated x coordinate, is greater than the x coordinate of the right hand end of the branch, then put it in the cage (which is simply an image on our page, where we will locate those birds).
  
 ## Look at the code
 Although we've done a video explanation, take a look at the code in `main.js` and see if you can explain to yourself what is going on.
@@ -374,7 +374,7 @@ In Javascript, an `if` statement looks like this
 
 ```js
 if(condition is true) {
-  execute all lines within this { } block
+  execute all lines within the { } block
 }
 else {
   otherwise execute this { } block instead
@@ -414,12 +414,14 @@ layout: ""
 step: 7-if-2
 
 ---
-Take a look at the preview now. It is more interesting in that all of our caged birds are neatly laid out.
+Take a look at the preview now. It is more interesting as all of our caged birds are neatly laid out within the cage.
 
-Take a look at `main.js` and see if you can figure out how it works. 
+Take a look at `main.js` and see if you can figure out how it works. Note that we have created our own function `checkBird()` to handle things. We could have put the `checkBird()` code within our loop but this shows a way in which we use a function instead. 
 
 ## Video
 Here's a video if you want the guided tour of the code.
+
+![VIDEO]
 
 ## Nested if statements
 There is no pun intended here, but if you look at the code, you can see an example of *nesting*. 
@@ -427,3 +429,43 @@ There is no pun intended here, but if you look at the code, you can see an examp
 Nesting is where a statement of one type (`if` in this case) is nested, or sits within a statement of the same type.
 
 `
+---
+title: Creating our own functions
+files: []
+
+---
+If you look at `main.js` now, you'll see that our loop looks much simpler. What we've done is to take all of the  `if` code and move it into a new function called `checkBird()`.
+
+This function expects to be told the X coordinate of the bird. It does not need the Y coordinate as we know that the Y coordinate for the branch is 120 unless it does not have room on the branch, in which case we are positioning it in the cage.
+
+## Function Declarations
+We *declare* our function as follows
+
+```js
+function checkBird(x)
+```
+
+1. Start the line with `function`
+1. Choose a meaningful name for our function
+1. Inside the brackets, specify any parameters that the function expects to receive.
+
+Functions can have any number of parameters, so the following are all possible examples
+
+```js
+function checkBird(x)
+function checkBird()
+function checkBird(x, y)
+function checkBird(x, y, birdName)
+```
+
+In Javascript, function names are like variable names in that they should not contain spaces and may only contain letters, numbers or the '-' or '_' characters.
+
+## Video
+Watch this video to see how the program executes.
+
+![VIDEO]
+---
+title: Variable scope
+files: []
+
+---

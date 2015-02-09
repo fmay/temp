@@ -1,15 +1,4 @@
 
-function checkBird(x) {
-  
-  if(x<450) {
-    createBird(x, 120);
-  }
-  else {
-    createBird(120, 290);
-  }
-  
-}
-
 function main() {
 
   var initialX, calcX, gap;
@@ -18,7 +7,12 @@ function main() {
   // Here's the loop
   for(initialX=50, gap=60, counter=0; counter<20; counter++) {
     calcX = initialX + gap*counter;
-    checkBird(calcX);  
+    if(calcX<450) {
+      createBird(calcX, 120);
+    }
+    else {
+      createBird(120, 290);
+    }     
   }
   
 }
